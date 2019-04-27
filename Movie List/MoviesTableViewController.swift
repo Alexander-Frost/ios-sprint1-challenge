@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MoviesTableViewController: UITableViewController {
+class MoviesTableViewController: UITableViewController, MovieControllerProtocol {
 
     var movieController: MovieController?
 

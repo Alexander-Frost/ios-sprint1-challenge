@@ -18,6 +18,7 @@
 		FAB94CE02273D5FF00410D51 /* MoviesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94CDF2273D5FF00410D51 /* MoviesTableViewController.swift */; };
 		FAB94CE22273D6F500410D51 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94CE12273D6F500410D51 /* MovieTableViewCell.swift */; };
 		FAB94CE42273DA6C00410D51 /* AddMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94CE32273DA6C00410D51 /* AddMovieViewController.swift */; };
+		FAB94CE62273DF7600410D51 /* MoviesTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB94CE52273DF7600410D51 /* MoviesTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		FAB94CDF2273D5FF00410D51 /* MoviesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableViewController.swift; sourceTree = "<group>"; };
 		FAB94CE12273D6F500410D51 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
 		FAB94CE32273DA6C00410D51 /* AddMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMovieViewController.swift; sourceTree = "<group>"; };
+		FAB94CE52273DF7600410D51 /* MoviesTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				FAB94CDF2273D5FF00410D51 /* MoviesTableViewController.swift */,
 				FAB94CE12273D6F500410D51 /* MovieTableViewCell.swift */,
 				FAB94CE32273DA6C00410D51 /* AddMovieViewController.swift */,
+				FAB94CE52273DF7600410D51 /* MoviesTabBarViewController.swift */,
 			);
 			path = "Movie List";
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			files = (
 				FAB94CDE2273D21A00410D51 /* MovieController.swift in Sources */,
 				FAB94CDA2273CD1300410D51 /* Movie.swift in Sources */,
+				FAB94CE62273DF7600410D51 /* MoviesTabBarViewController.swift in Sources */,
 				FAB94CE22273D6F500410D51 /* MovieTableViewCell.swift in Sources */,
 				FAB94CE42273DA6C00410D51 /* AddMovieViewController.swift in Sources */,
 				467E198D20F5165800E7FF73 /* AppDelegate.swift in Sources */,
