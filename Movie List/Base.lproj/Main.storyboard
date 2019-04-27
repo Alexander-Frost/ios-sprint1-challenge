@@ -65,6 +65,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="myTableView" destination="gnj-7r-wE5" id="uc3-Kf-DAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gwj-CW-VwX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -143,6 +146,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="aED-Uu-ROi" customClass="MoviesTabBarViewController" customModule="Movie_List" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tAX-lZ-6WJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

@@ -10,10 +10,14 @@ import UIKit
 
 class MoviesViewController: UIViewController {
 
+    @IBOutlet var myTableView: UITableView!
     
+    var movieController: MovieController?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        myTableView.delegate = self
+        myTableView.dataSource = self
         // Do any additional setup after loading the view.
     }
     
@@ -28,4 +32,30 @@ class MoviesViewController: UIViewController {
     }
     */
 
+}
+extension MoviesViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return movieController?.movies.count ?? 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MovieCell", for: indexPath)
+        
+        guard let movieCell = cell as? MovieTableViewCell else {return cell}
+        
+        movieCell.movie = movieController?.movies[indexPath.row]
+        
+        return cell
+    }
+    
+    // Override to support editing the table view.
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            movieController?.deleteMovie(atIndex: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }}
+}
+extension MoviesViewController: UITableViewDelegate{
+    
 }
