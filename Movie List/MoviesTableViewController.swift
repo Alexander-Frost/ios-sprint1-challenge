@@ -28,9 +28,7 @@ class MoviesTableViewController: UITableViewController, MovieControllerProtocol 
     }
 
     // MARK: - Table view data source
-
-
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return movieController?.movies.count ?? 1
@@ -42,14 +40,12 @@ class MoviesTableViewController: UITableViewController, MovieControllerProtocol 
 
         guard let movieCell = cell as? MovieTableViewCell else {return cell}
         
-        movieCell.movie = movieController?.movies[indexPath.row]
+//        movieCell.movie = movieController?.movies[indexPath.row]
+        movieCell.movieNameLbl.text = movieController?.movies[indexPath.row].movieTitle
         
         return cell
     }
     
-
-
-
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {

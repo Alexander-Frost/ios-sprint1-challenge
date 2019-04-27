@@ -36,18 +36,18 @@
                                                 <action selector="seenBtnPressed:" destination="qdb-n1-7i4" eventType="touchUpInside" id="9co-YK-rEm"/>
                                             </connections>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyD-ZO-XXl">
-                                            <rect key="frame" x="21" y="-11" width="96" height="23"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyD-ZO-XXl">
+                                            <rect key="frame" x="21" y="11.5" width="96" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="vyD-ZO-XXl" firstAttribute="centerY" secondItem="RmR-Q8-aeD" secondAttribute="centerY" id="FpD-8g-fkm"/>
                                         <constraint firstAttribute="trailing" secondItem="KA2-HR-bF0" secondAttribute="trailing" constant="15" id="RH7-uh-11D"/>
                                         <constraint firstItem="KA2-HR-bF0" firstAttribute="centerY" secondItem="RmR-Q8-aeD" secondAttribute="centerY" id="n4F-0X-mTr"/>
                                         <constraint firstItem="vyD-ZO-XXl" firstAttribute="leading" secondItem="RmR-Q8-aeD" secondAttribute="leadingMargin" constant="5" id="na1-q5-21j"/>
+                                        <constraint firstItem="vyD-ZO-XXl" firstAttribute="centerY" secondItem="RmR-Q8-aeD" secondAttribute="centerY" id="t1h-cW-B5I"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
