@@ -19,9 +19,8 @@ class AddMovieViewController: UIViewController {
         guard let myMovieName = movieTextField.text,
             !myMovieName.isEmpty
             else { return }
-        
-        movieTextField.text = ""
         movieController?.createMovie(movieName: myMovieName)
+        movieTextField.text = ""
         print(myMovieName, movieController?.movies)
     }
     

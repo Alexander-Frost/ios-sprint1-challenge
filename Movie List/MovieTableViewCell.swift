@@ -10,15 +10,18 @@ import UIKit
 
 class MovieTableViewCell: UITableViewCell {
 
-    @IBOutlet var sendBtn: UIButton!
-    @IBOutlet var movieNameLbl: UILabel!
+    @IBOutlet var seenBtn: UIButton!
+    
     @IBAction func seenBtnPressed(_ sender: UIButton) {
-        if sendBtn.title(for: .normal) == "Seen" {
-            sendBtn.setTitle("Unseen", for: .normal)
+        if seenBtn.title(for: .normal) == "Seen" {
+            seenBtn.setTitle("Unseen", for: .normal)
         } else {
-            sendBtn.setTitle("Seen", for: .normal)
+            seenBtn.setTitle("Seen", for: .normal)
         }
     }
+    
+    @IBOutlet var movieNameLbl: UILabel!
+    
     
     var movie: Movie? {
         didSet {
