@@ -10,9 +10,6 @@ import UIKit
 
 class MoviesViewController: UIViewController {
 
-    @IBOutlet var movieNameLbl: UILabel!
-    @IBAction func seenBtnPressed(_ sender: UIButton) {
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
