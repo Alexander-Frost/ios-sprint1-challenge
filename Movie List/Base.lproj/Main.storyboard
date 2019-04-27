@@ -40,8 +40,8 @@
                                                         <action selector="seenBtnPressed:" destination="XSf-jv-0sY" eventType="touchUpInside" id="DSW-dr-xH3"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dX-ig-FGy">
-                                                    <rect key="frame" x="15" y="10" width="96" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dX-ig-FGy">
+                                                    <rect key="frame" x="15" y="11.5" width="96" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -50,6 +50,7 @@
                                             <constraints>
                                                 <constraint firstItem="8dX-ig-FGy" firstAttribute="centerY" secondItem="pBe-YL-0ea" secondAttribute="centerY" id="2Cx-kN-XcP"/>
                                                 <constraint firstAttribute="trailing" secondItem="pQG-Y5-5ZI" secondAttribute="trailing" constant="20" id="3PS-tg-CHM"/>
+                                                <constraint firstItem="8dX-ig-FGy" firstAttribute="leading" secondItem="pBe-YL-0ea" secondAttribute="leading" constant="15" id="3VN-GD-Jfs"/>
                                                 <constraint firstItem="8dX-ig-FGy" firstAttribute="leading" secondItem="pBe-YL-0ea" secondAttribute="leading" constant="15" id="LP0-i1-BSC"/>
                                                 <constraint firstItem="pQG-Y5-5ZI" firstAttribute="centerY" secondItem="pBe-YL-0ea" secondAttribute="centerY" id="pJr-Zu-foP"/>
                                             </constraints>

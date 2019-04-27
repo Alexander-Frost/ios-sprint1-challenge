@@ -14,6 +14,10 @@ class MoviesViewController: UIViewController {
     
     var movieController: MovieController?
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        myTableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         myTableView.delegate = self

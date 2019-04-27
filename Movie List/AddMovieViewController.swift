@@ -22,6 +22,7 @@ class AddMovieViewController: UIViewController {
         
         movieTextField.text = ""
         movieController?.createMovie(movieName: myMovieName)
+        print(myMovieName, movieController?.movies)
     }
     
     override func viewDidLoad() {

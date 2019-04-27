@@ -22,6 +22,7 @@ class MovieController {
     
     func createMovie(movieName: String, seen: Bool = false) {
         let newMovie = Movie(movieTitle: movieName, seen: seen)
+        print(newMovie)
         movies.append(newMovie)
     }
 }
