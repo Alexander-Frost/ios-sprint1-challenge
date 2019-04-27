@@ -1,5 +1,5 @@
 //
-//  MoviesViewController.swift
+//  AddMovieViewController.swift
 //  Movie List
 //
 //  Created by Alex on 4/26/19.
@@ -8,10 +8,20 @@
 
 import UIKit
 
-class MoviesViewController: UIViewController {
+class AddMovieViewController: UIViewController {
 
-    @IBOutlet var movieNameLbl: UILabel!
-    @IBAction func seenBtnPressed(_ sender: UIButton) {
+    var movieController: MovieController?
+
+    @IBOutlet var movieTextField: UITextField!
+    
+    @IBAction func addMovieBtnPressed(_ sender: UIButton) {
+        
+        guard let myMovieName = movieTextField.text,
+            !myMovieName.isEmpty
+            else { return }
+        
+        movieTextField.text = ""
+        movieController?.createMovie(movieName: myMovieName)
     }
     
     override func viewDidLoad() {

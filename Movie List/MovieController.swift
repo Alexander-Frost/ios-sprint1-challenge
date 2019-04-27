@@ -8,6 +8,20 @@
 
 import Foundation
 
+protocol MovieControllerProtocol: AnyObject {
+    var movieController: MovieController? { get set }
+}
+
+
 class MovieController {
     var movies: [Movie] = []
+    
+    func deleteMovie(atIndex index: Int) {
+        movies.remove(at: index)
+    }
+    
+    func createMovie(movieName: String, seen: Bool = false) {
+        let newMovie = Movie(movieTitle: movieName, seen: seen)
+        movies.append(newMovie)
+    }
 }
